@@ -1,59 +1,62 @@
 # YouTube Clone (HTML & CSS)
 
-## 📌 Overview
-This project is a simple YouTube clone built using only HTML and CSS. The goal is to replicate the layout and styling of YouTube's homepage, including the navbar, sidebar, video thumbnails, and responsive design.
+## Overview
+This project is a simple YouTube clone built using only HTML and CSS. The goal is to replicate the layout and styling of YouTube's homepage, including the navigation bar, sidebar, video thumbnails, and responsive design.
 
-## 🎯 Features
+## Features
 - Responsive YouTube-like layout
 - Sticky navigation bar
-- Sidebar with categories
+- Sidebar with navigation categories
 - Grid-based video section
 
-
-## 🛠️ Technologies Used
+## Technologies Used
 - HTML5
 - CSS3 (Flexbox, Grid, Media Queries)
 
-## 📂 Project Structure
+## Project Structure
+```
+youtube-clone/
+├── index.html              # Main HTML file
+├── styles/
+│   ├── general.css         # Base styles, body padding, font
+│   ├── header.css          # Fixed top navigation bar
+│   ├── sidebar.css         # Left sidebar navigation
+│   └── video.css           # Video grid and thumbnails
+├── thumbnails/             # Video thumbnail images (WebP)
+├── channel-pictures/       # Channel avatars and user picture
+├── icons/                  # SVG icons
+└── README.md               # Project documentation
+```
 
-```
-📁 youtube-clone
-│── 📁 assets          # Contains images, icons, and other static files
-│── 📁 css             # Contains all stylesheets
-│   └── styles.css     # Main CSS file
-│── 📁 fonts           # (Optional) Custom fonts if needed
-│── index.html         # Main HTML file
-└── README.md          # Project documentation
-```
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository:
-```
-git clone https://github.com/your-username/youtube-clone.git
-```
+   ```
+   git clone https://github.com/transcenddev/youtube-clone.git
+   ```
+
 2. Navigate to the project folder:
-```
-cd youtube-clone
-```
+   ```
+   cd youtube-clone
+   ```
+
 3. Open index.html in your browser.
 
-## 📱 Responsive Design
-This project is designed to be fully responsive using CSS media queries, ensuring a great user experience across different devices.
+## Responsive Design
+This project uses CSS media queries to adapt the layout across different screen sizes:
 
-## 🎨 UI Preview
+- **Up to 750px**: 2-column video grid, collapsed sidebar (72px)
+- **751px - 999px**: 3-column video grid, collapsed sidebar (72px)
+- **1000px - 1199px**: 4-column video grid, collapsed sidebar (72px)
+- **1200px and above**: 4-column video grid, expanded sidebar (250px)
 
-## 🔧 Future Improvements
+## Future Improvements
 - Add JavaScript for video functionality
 - Implement a dark mode toggle
 - Enhance UI with animations and transitions
 
-# 📜 License
+## License
 This project is open-source and free to use under the MIT License.
 
-----
-
-Feel free to contribute or suggest improvements!
-
-
-
-
+## Contributing
+Feel free to contribute or suggest improvements.
